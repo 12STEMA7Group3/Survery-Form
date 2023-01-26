@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron's Services Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title-container">
+            <h1 id="title" class="survey-form-title">
+                Aaron's Services Survey Form
+            </h1>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <div class="description-container">
+            <p id="description" class="description-of-title">
+                This is to know if my services are of satisfaction to my customers.
+                <br>
+                Thank you for your time.
+            </p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <form id="survey-form" class="survey-form">
+                <div class="form-container">
+                    <label id="name-label" for="yourname">
+                        What's Your Name? 
+                        <input id="name" type="text" name="yourname" placeholder="Put your name here" required />
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label id="email-label" for="email">
+                        What's Your Email? 
+                        <input id="email" type="email" name="email" placeholder="123example@gmail.com" required />
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label id="number-label" for="age">
+                        What's Your Age? 
+                        <input id="number" type="number" name="age" min="18" max="60" placeholder="Age" required />
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label id="dropdown-label" for="occupation">
+                        What's Your Occupation?
+                        <select id="dropdown" name="occupation" required>
+                            <option disabled selected value>Choose an Occupation</option>
+                            <option value="student">Student</option>
+                            <option value="freelancer">Freelancer</option>
+                            <option value="youtuber">Youtuber</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-container">
+                    <p class="recommendation-title">
+                        Would you recommend my services to a friend?
+                    </p>
+                    <label id="recommendation-label" for="without-a-doubt">
+                        <input id="without-a-doubt" value="without-a-doubt" type="radio" name="user-recommendation" checked />
+                        Without a doubt!
+                    </label>
+                    <label id="recommendation-label" for="unsure">
+                        <input id="unsure" value="unsure" type="radio" name="user-recommendation" />
+                        Maybe
+                    </label>
+                    <label id="recommendation-label" for="no">
+                        <input id="no" value="no" type="radio" name="user-recommendation" />
+                        I wouldn't
+                    </label>
+                </div>
+                <div class="form-container">
+                    <p class="improvement-title">
+                        What improvement/s could my service have? 
+                        <span class="span">
+                            (Check all that apply)
+                        </span>
+                    </p>
+                    <label class="label-improvement">
+                        <input type="checkbox" value="communication" class="checkbox">
+                        Better Communication
+                    </label>
+                    <label class="label-improvement">
+                        <input type="checkbox" value="efficiency" class="checkbox">
+                        Be More Efficient
+                    </label>
+                    <label class="label-improvement">
+                        <input type="checkbox" value="friendliness" class="checkbox">
+                        Be Friendlier
+                    </label>
+                    <label class="label-improvement">
+                        <input type="checkbox" value="cheaper-prices" class="checkbox">
+                        Cheaper Prices
+                    </label>
+                    <label class="label-improvement">
+                        <input type="checkbox" value="more-services" class="checkbox">
+                        More Services
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label id="suggestion-label" class="suggestions-title">
+                        Any Comments/Suggestions?
+                      <textarea id="comments" class="comments" placeholder="Type you suggestions..."></textarea>
+                    </label>
+                </div>
+                <div class="form-container">
+                    <button id="submit" type="submit" class="submit-button" value="submit">
+                        Submit Your Answers
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
